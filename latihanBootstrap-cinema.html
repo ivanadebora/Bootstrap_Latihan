@@ -1,0 +1,279 @@
+<html>
+    <head>
+        <title>Movie ID</title>
+        <title>Latihan Bootstrap 3</title>
+        <script src="jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css" />
+        <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+        <style>
+            .navbar {
+                background-color: rgb(109, 5, 5);
+            }
+            .poster {
+                background-color: white; image-orientation:center; padding: 10px; margin:auto;
+            }
+
+            .btn-sm{
+                background-color: white; color: black; border-color: black;
+            }
+
+            .footer {
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color: rgb(212, 209, 209);
+                color: black;
+                text-align: center;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            li.footer {
+                display: inline;
+            }
+        </style>
+    </head>
+
+    <body>
+            <nav class="navbar navbar-default">
+                    <div class="container">
+                        <div class="navbar-header" >
+                            <button class="navbar-toggle collapsed"
+                                data-toggle="collapse" data-target="#menu" style="margin-left:10px; float:left">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a href="#" class="navbar-brand">
+                                    <img src="images/movie_id.png" width="70px" height="25px" style="image-orientation:center">
+                                    </a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="menu">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#" style="color:white">Now Playing</a></li>
+                                <li><a href="#" style="color:white">Theaters</a></li>
+                                <li><a href="#" style="color:white">Up Coming</a></li>
+                            </ul>
+                                    <div class="nav navbar-nav navbar-right" style="display: block; padding:7px">
+                                        <div class="dropdown">
+                                            <button class="btn dropdown-toggle" data-toggle="dropdown" style="background-color:rgb(204, 154, 154); color: white">
+                                                <span class= "glyphicon glyphicon-user"></span>
+                                                Tix-ID<div class="caret"><div></button>
+                                                    <ul class="dropdown-menu" data-toggle="collapse"> 
+                                                        <li><a href="#">Login</a></li>
+                                                        <li><a href="#">Register</a></li>
+                                                    </ul>
+                                        </div>
+                                    </div>
+                            <div class="nav navbar-nav navbar-right" style="display: block; padding:7px">
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle" data-toggle="dropdown" style="background-color:rgb(204, 154, 154); color: white">About us<div class="caret"><div></button>
+                                        <ul class="dropdown-menu" data-toggle="collapse"> 
+                                            <li><a href="#">Info</a></li>
+                                            <li><a href="#">FAQ</a></li>
+                                            <li><a href="#">Contact</a></li>
+                                            <li><a href="#">About us</a></li>
+                                        </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                
+                <div class="col-xs-offset-1 col-xs-10">
+                    <div style="margin: auto; max-height:200px" class="carousel slide" id="iniCarousel" data-ride="carousel">    
+                        <div class="carousel-inner" >
+                            <div class="item active" >
+                                <center><img src="images/bcaxxipremiere.jpeg" style="height: 200px; width: 75%"/></center>
+                            </div>
+                            <div class="item" >
+                                <center><img src="images/pleasure-in-banking-promo-gratis-nonton-bioskop-di-xxi-sampai-akhir-tahun-menggu.jpg" style="height: 200px; width: 75%"/></center>
+                            </div>
+                            <div class="item" >
+                                <center><img src="images/xx1.jpg" style="height: 200px; width: 75%"/></center>
+                            </div>
+                        </div>
+            
+                        <a class="right carousel-control" href="#iniCarousel" data-slide="next">
+                            <span class= "glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                        <a class="left carousel-control" href="#iniCarousel" data-slide="prev">
+                                <span class= "glyphicon glyphicon-chevron-left"></span>
+                        </a>
+            
+                        <ol class="carousel-indicators">
+                            <li data-target="#iniCarousel"
+                                data-slide-to="0" class="active"></li>
+                            <li data-target="#iniCarousel"
+                                data-slide-to="1"></li>
+                            <li data-target="#iniCarousel"
+                                data-slide-to="2"></li>
+                        </ol>
+            
+                    </div>
+                </div>
+                
+
+                    <script>
+                        $(function() {
+                            $('.carousel').carousel({
+                                interval: 2000,
+                                pause: false,
+                                wrap: true,
+                                keyboard: true
+                            });
+                        });
+                    </script>
+
+                    <br/>
+                    
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-lg-3 poster">
+                                <center><div class="border1">
+                                    <img src="images/fantastic-beast.jpg" style="height: 240px; width: 160px" class="img-responsive"/>
+                                    <a href="#fantastic">Fantastic Beast: <br/>The Crimes of Grindewald</a>
+                                    <br/>
+                                    <div>
+                                        <button class="btn btn-sm">2D</button>
+                                        <span><button class="btn btn-sm">R13+</button></span>
+                                    </div>
+                                    <br/>
+                                    <div>
+                                        <button class="btn btn-primary">Pesan Tiket</button>
+                                    </div>
+                                </div></center>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-lg-3 poster">
+                                <center><div class="border1" >
+                                    <img src="images/ahok.jpg" style="height: 240px; width: 160px" class="img-responsive"/>
+                                    <a href="#ahok">A Man Called Ahok<br/></a>
+                                    <br/>
+                                    <div>
+                                        <button class="btn btn-sm">2D</button>
+                                        <span><button class="btn btn-sm">R13+</button></span>
+                                    </div>
+                                    <br/>
+                                    <div>
+                                        <button class="btn btn-primary">Pesan Tiket</button>
+                                    </div>
+                                </div></center>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-lg-3 poster">
+                                <center><div class="border1" >
+                                    <img src="images/Milly-Mamet.jpg" style="height: 240px; width: 160px" class="img-responsive"/>
+                                    <a href="#milly-mamet">MILLY & MAMET <br/> (Ini Bukan Cinta & Rangga)</a>
+                                    <br/>
+                                    <div>
+                                        <button class="btn btn-sm">2D</button>
+                                        <span><button class="btn btn-sm">R13+</button></span>
+                                    </div>
+                                    <br/>
+                                    <div>
+                                        <button class="btn btn-primary">Pesan Tiket</button>
+                                    </div>
+                                </div></center>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-lg-3 poster">
+                                <center><div class="border1" >
+                                    <img src="images/a-star-is-born.jpg" style="height: 240px; width: 160px" class="img-responsive"/>
+                                    <a href="#star">A Star is Born <br/></a>
+                                    <br/>
+                                    <div>
+                                        <button class="btn btn-sm">2D</button>
+                                        <span><button class="btn btn-sm">D17+</button></span>
+                                    </div>
+                                    <br/>
+                                    <div>
+                                        <button class="btn btn-primary">Pesan Tiket</button>
+                                    </div>
+                                </div></center>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-lg-3 poster">
+                                <center><div class="border1" >
+                                    <img src="images/creed.jpg" style="height: 240px; width: 160px" class="img-responsive"/>
+                                    <a href="#creed">Creed 2<br/></a>
+                                    <br/>
+                                    <div>
+                                        <button class="btn btn-sm">2D</button>
+                                        <span><button class="btn btn-sm">D17+</button></span>
+                                    </div>
+                                    <br/>
+                                    <div>
+                                        <button class="btn btn-primary">Pesan Tiket</button>
+                                    </div>
+                                </div></center>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-lg-3 poster">
+                                <center><div class="border1" >
+                                    <img src="images/bohemian-rhapsody.jpg" style="height: 240px; width: 160px" class="img-responsive"/>
+                                    <a href="#bohemian">Bohemian Rhapsody<br/></a>
+                                    <br/>
+                                    <div>
+                                        <button class="btn btn-sm">2D</button>
+                                        <span><button class="btn btn-sm">D17+</button></span>
+                                    </div>
+                                    <br/>
+                                    <div>
+                                        <button class="btn btn-primary">Pesan Tiket</button>
+                                    </div>
+                                </div></center>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-lg-3 poster">
+                                <center><div class="border1" >
+                                    <img src="images/grinch.jpg" style="height: 240px; width: 160px" class="img-responsive"/>
+                                    <a href="#grinch">The Grinch<br/></a>
+                                    <br/>
+                                    <div>
+                                        <button class="btn btn-sm">2D</button>
+                                        <span><button class="btn btn-sm">SU</button></span>
+                                    </div>
+                                    <br/>
+                                    <div>
+                                        <button class="btn btn-primary">Pesan Tiket</button>
+                                    </div>
+                                </div></center>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-lg-3 poster">
+                                <center><div class="border1" >
+                                    <img src="images/nutcracker.jpg" style="height: 240px; width: 160px" class="img-responsive"/>
+                                    <a href="#nutcracker">The Nutcracker and <br/> the Four Realms</a>
+                                    <br/>
+                                    <div>
+                                        <button class="btn btn-sm">2D</button>
+                                        <span><button class="btn btn-sm">R13+</button></span>
+                                    </div>
+                                    <br/>
+                                    <div>
+                                        <button class="btn btn-primary">Pesan Tiket</button>
+                                    </div>
+                                </div></center>
+                            </div>
+                        </div>
+                    </div>
+                <br/>
+                <br/>
+                <br/>
+                <div class="footer">
+                    <div class="container-fluid">
+                        <br/>
+                        <center>
+                        <ul>
+                            <li class="footer"><a href="#profile">Profile</a></li>
+                            <li class="footer"><a>|</a></li>
+                            <li class="footer"><a href="#term">Term of Use</a></li>
+                            <li class="footer"><a>|</a></li>
+                            <li class="footer"><a href="#credit">Credit</a></li>
+                            <li class="footer"><a>|</a></li>
+                            <li class="footer"><a href="#sitemap">Sitemap</a></li>
+                        </ul>
+                        </center>
+                        <p>All materials and contents (text, graphics, and every attributes) of MovieID or movie-id.com website are copyrights and trademarks of MovieID. No part of this website may be reproduced in any form without our written permission. Misuse of the entire content or any part, multiply, translate, use, or utilize it without written permission from MovieID will be subject to criminal and / or civil penalties.</p>
+                        <br/>
+                    </div>
+                </div>
+    </body>
+</html>
